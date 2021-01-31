@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aronde | Main page</title>
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+    <h1>.aronde</h1>
+
+    <p>a girl in the wide IT world</p>
+</div>
+<div class="container">
+    <h1>.themes</h1>
+
+    <div class="cards">
+        <div class="card-white">
+            <img src="static/images/hat-gabe-rebra.jpg" alt="About">
+            <h3>{{title}}</h3>
+            <p>The life of a future junior programmer</p>
+        </div>
+
+        {% for item in my_context %}
+        <div class="card-white">
+            <img src={{ item.image }} alt={{ item.description }}>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.text }}</p>
+        </div>
+        {% endfor %}
+
+
+        <div class="card-white">
+            <img src="static/images/stairs-ricardo-gomez-angel.jpg" alt="Sign in">
+            <h3>Sign in</h3>
+            <form>
+                <label for="login">Login:</label><br>
+                <input type="text" id="login" name="login"><br>
+                <label for="password">Password:</label><br>
+                <input type="text" id="password" name="password">
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Website made with ❤ by aronde</p>
+    </div>
+</body>
+
+</body>
+</html>

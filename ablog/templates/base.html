@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aronde | Main page</title>
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+    <h1>.aronde</h1>
+
+    <p>a girl in the wide IT world</p>
+</div>
+<div class="container-about">
+    {% block content %}
+    replace me
+    {% endblock %}
+</div>
+
+<div class="footer">
+    <p>Today is {% now 'l d. m. Y   H:i:s' %}</p>
+    <p>Website made with ❤ by aronde</p>
+</div>
+</body>
+
+</body>
+</html>
