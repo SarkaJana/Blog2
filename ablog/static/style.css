@@ -1,0 +1,90 @@
+body {
+  font-family: Overpass;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: #404042;
+  font-family: Chivo;
+}
+
+.container {
+  width: auto;
+  margin: 20px;
+  text-align: center;
+}
+
+.container h3 {
+  color: red
+  }
+
+.container-about {
+  width: 400 px;
+  margin: auto;
+  padding: 30 px, 10 px;
+  text-align: center;
+  }
+.button {
+  background-color: #808080; /* seda */
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px
+  }
+
+.banner {
+  background-image: url('images/swallow.jpg');
+  background-size: cover;
+  background-position: center top;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  color: red;
+  font-size: 55px;
+  margin: 0;
+}
+.banner p {
+  color: #404042;
+  font-size: 33px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+}
+
+.card-white {
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  width: 200px;
+  text-align: center;
+  padding: 24px;
+  margin: 8px;
+}
+
+.card-white img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
+.footer {
+  background: #404042;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.footer p {
+  color: white;
+}
+
